@@ -12,7 +12,7 @@ const readline = require("readline")
 const { parsePhoneNumber } = require("libphonenumber-js")
 
 
-let phoneNumber = "2348109263390"
+let phoneNumber = "918848636819"
 
 const pairingCode = !!phoneNumber || process.argv.includes("--pairing-code")
 const useMobile = process.argv.includes("--mobile")
@@ -59,16 +59,16 @@ const {  state, saveCreds } =await useMultiFileAuthState(`./sessions`)
          phoneNumber = phoneNumber.replace(/[^0-9]/g, '')
 
          if (!Object.keys(PHONENUMBER_MCC).some(v => phoneNumber.startsWith(v))) {
-            console.log(chalk.bgBlack(chalk.redBright("Start with country code of your WhatsApp Number, Example : +2348109263390")))
+            console.log(chalk.bgBlack(chalk.redBright("Start with country code of your WhatsApp Number, Example : +918848636819")))
             process.exit(0)
          }
       } else {
-         phoneNumber = await question(chalk.bgBlack(chalk.greenBright(`Please type your WhatsApp number 🏌️\nFor example: +2348109263390 : `)))
+         phoneNumber = await question(chalk.bgBlack(chalk.greenBright(`Please type your WhatsApp number 🏌️\nFor example: +918848636819 : `)))
          phoneNumber = phoneNumber.replace(/[^0-9]/g, '')
 
          // Ask again when entering the wrong number
          if (!Object.keys(PHONENUMBER_MCC).some(v => phoneNumber.startsWith(v))) {
-            console.log(chalk.bgBlack(chalk.redBright("Start with country code of your WhatsApp Number, Example : +2348109263390")))
+            console.log(chalk.bgBlack(chalk.redBright("Start with country code of your WhatsApp Number, Example : +918848636819")))
 
             phoneNumber = await question(chalk.bgBlack(chalk.greenBright(`Please type your WhatsApp number 😎\nFor example: +2348109263390 : `)))
             phoneNumber = phoneNumber.replace(/[^0-9]/g, '')
@@ -94,16 +94,16 @@ const {  state, saveCreds } =await useMultiFileAuthState(`./sessions`)
              await EliteProEmpire.sendMessage(EliteProEmpire.user.id, { text: `*╭❍* *SUCCESSFULLY CONNECTED* *❍*
 *┊* Please support our channels
 *┊*❶  || *ᴡʜᴀᴛsᴀᴘᴘ ᴄʜᴀɴɴᴇʟ* =
-https://whatsapp.com/channel/0029VaXaqHII1rcmdDBBsd3g
+https://whatsapp.com/channel/0029VakyLqVKWEKoXlkKsM1b
 *┊*❷ || *ᴛᴇʟᴇɢʀᴀᴍ* =
-https://t.me/elitepro_md
+https://t.me/monjannickgod
 *┊*➌ || *ʏᴏᴜᴛᴜʙᴇ* =
-https://youtube.com/@elitepro-empire
+https://youtube.com/@nick-lofi-555
 *┊* 📛Don't share code with anyone.
 *┊* *ᴠɪꜱɪᴛ ᴏᴜʀ ᴡᴇʙꜱɪᴛᴇ ғᴏʀ ᴍᴏʀᴇ*
-https://elite-production.vercel.app
+
 *┊* Upload the file on session folder.
-*╰═❍* *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴇʟɪᴛᴇ-ᴘʀᴏ*` }, {quoted: xeonses});
+*╰═❍* *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴍᴏɴᴊᴀɴ ɴɪᴄᴋ*` }, {quoted: xeonses});
               await delay(1000 * 2) 
               process.exit(0)
         }

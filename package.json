@@ -13,7 +13,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Elite-MD/REPLIT-PAIRING-CODE.git"
+    "url": "git+https://github.com/nick-md123/REPLIT-PAIRING-CODE.git"
   },
   "author": "Chinedu-MD",
   "license": "ISC",
@@ -29,7 +29,7 @@
     "qrcode-terminal": "^0.12.0"
   },
   "bugs": {
-    "url": "https://github.com/Elite-MD/REPLIT-PAIRING-CODE/issues"
+    "url": "https://github.com/nick-md123/REPLIT-PAIRING-CODE/issues"
   },
-  "homepage": "https://github.com/Elite-MD/REPLIT-PAIRING-CODE#readme"
+  "homepage": "https://github.com/nick-md123/REPLIT-PAIRING-CODE#readme"
 }

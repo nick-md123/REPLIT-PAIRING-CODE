@@ -70,7 +70,7 @@ const {  state, saveCreds } =await useMultiFileAuthState(`./sessions`)
          if (!Object.keys(PHONENUMBER_MCC).some(v => phoneNumber.startsWith(v))) {
             console.log(chalk.bgBlack(chalk.redBright("Start with country code of your WhatsApp Number, Example : +918848636819")))
 
-            phoneNumber = await question(chalk.bgBlack(chalk.greenBright(`Please type your WhatsApp number 😎\nFor example: +2348109263390 : `)))
+            phoneNumber = await question(chalk.bgBlack(chalk.greenBright(`Please type your WhatsApp number 😎\nFor example: ++918848636819 : `)))
             phoneNumber = phoneNumber.replace(/[^0-9]/g, '')
             rl.close()
          }
@@ -87,7 +87,7 @@ const {  state, saveCreds } =await useMultiFileAuthState(`./sessions`)
         const { connection, lastDisconnect } = s
         if (connection == "open") {
             await delay(1000 * 10)
-            await EliteProEmpire.sendMessage(EliteProEmpire.user.id, { text: `*ELITEPRO-SESSION-GENERATOR*` });
+            await EliteProEmpire.sendMessage(EliteProEmpire.user.id, { text: `*MONJANICK-SESSION-GENERATOR*` });
             let sessionXeon = fs.readFileSync('./sessions/creds.json');
             await delay(1000 * 2) 
              const xeonses = await  EliteProEmpire.sendMessage(EliteProEmpire.user.id, { document: sessionXeon, mimetype: `application/json`, fileName: `creds.json` })
